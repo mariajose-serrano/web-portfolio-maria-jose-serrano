@@ -307,7 +307,15 @@ img {
 .about-media {
   padding: 0;
   overflow: hidden;
-  min-height: 280px;
+  min-height: 320px;
+}
+
+.about-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
 }
 
 /* Projects */

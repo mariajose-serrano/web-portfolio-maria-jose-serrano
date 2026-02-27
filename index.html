@@ -1,29 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Vinculo mi hoja styles.css -->
-  <link rel="stylesheet" href="./styles.css" />
-  <!-- Personalizo el title de mi página -->
-  <title>MJs Portfolio</title>
-  <!-- Añado un pequeño icono a la página desde mi carpeta de imágenes -->
-  <link rel="icon" type="image/png" href="./images/githubLogo.jpg" />
-  <!-- Vinculo Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
 <body>
-  <div id="boton-principal">
-    <p>Hello world</p>
-  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Inicio">
+        <span class="brand-logo">MJ</span>
+        <span class="brand-text">
+          <strong>Mi Portfolio</strong>
+          <small>Frontend / UI</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-icons" aria-label="Iconos redes">
+        <a class="icon-btn" href="#" aria-label="GitHub">GH</a>
+        <a class="icon-btn" href="#" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="#" aria-label="Email">@</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="panel hero-text">
+          <p class="kicker">👋 Hi, I'm MJ</p>
+          <h1>Construyo interfaces limpias, rápidas y responsive.</h1>
+          <p class="lead">
+            Aquí va una mini descripción (2–4 líneas). Qué haces, qué te gusta construir,
+            y qué tipo de oportunidades buscas.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects">Ver proyectos</a>
+            <a class="btn" href="#contact">Contactar</a>
+          </div>
+        </div>
+
+        <div class="panel hero-media" aria-label="Imagen principal">
+          <!-- Reemplaza por tu imagen si quieres -->
+          <div class="media-placeholder">
+            <img src="./images/photocards_ai_collage (7).png" alt="Foto">
+          </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p class="sub">5 líneas sobre tu vida / perfil</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel about-text">
+            <div class="note">
+              <h3>Texto 1</h3>
+              <p>
+                Breve resumen. Quién eres, qué haces, qué te diferencia.
+              </p>
+            </div>
+
+            <div class="note">
+              <h3>Texto 2</h3>
+              <p>
+                Estudios, intereses, objetivos o experiencia. Manténlo claro y directo.
+              </p>
+            </div>
+          </div>
+
+          <div class="panel about-media" aria-label="Imagen About">
+            <!-- Si quieres imagen real: <img src="..." alt="Foto about"> -->
+            <div class="media-placeholder">Imagen / Foto</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="sub">3 columnas en desktop · en móvil se apilan</p>
+        </div>
+
+        <div class="panel projects">
+          <div class="projects-top">
+            <div class="chips">
+              <span class="chip">Programación</span>
+              <span class="chip">Diseño</span>
+              <span class="chip">Logos</span>
+            </div>
+
+            <!-- Solo visual (sin JS aún). Luego lo convertimos en carrusel real -->
+            <div class="carousel-ui" aria-label="Controles carrusel">
+              <button class="icon-btn" type="button" aria-label="Anterior">←</button>
+              <button class="icon-btn" type="button" aria-label="Siguiente">→</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="thumb"></div>
+              <h3>Proyecto 01</h3>
+              <p>Descripción corta del proyecto (1–2 líneas).</p>
+              <div class="meta">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="thumb"></div>
+              <h3>Proyecto 02</h3>
+              <p>Descripción corta del proyecto (1–2 líneas).</p>
+              <div class="meta">
+                <span class="chip">JS</span>
+                <span class="chip">UI</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="thumb"></div>
+              <h3>Proyecto 03</h3>
+              <p>Descripción corta del proyecto (1–2 líneas).</p>
+              <div class="meta">
+                <span class="chip">Figma</span>
+                <span class="chip">Responsive</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOTO PARA QUEBRAR -->
+    <section class="break">
+      <div class="break-inner">
+        <div class="container">
+          <img src="./images/fotoespejoreflejo.jpeg" class="break-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT + SKILLS -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="sub">Let’s connect!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel contact">
+            <h3>Envíame un mensaje</h3>
+
+            <form class="form" action="#" method="post">
+              <label>
+                <span>Nombre</span>
+                <input type="text" name="name" placeholder="Tu nombre" />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="tuemail@email.com" />
+              </label>
+
+              <label>
+                <span>Mensaje</span>
+                <textarea name="message" placeholder="Escribe tu mensaje..."></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">Enviar</button>
+            </form>
+          </div>
+
+          <aside class="panel skills">
+            <h3>Skills</h3>
+            <p class="muted">Luego podemos convertir esto en carrusel con JS.</p>
+
+            <div class="skills-wrap">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Git</span>
+              <span class="chip">Responsive</span>
+              <span class="chip">Accesibilidad</span>
+            </div>
+
+            <div class="credits">
+              <p class="muted">Iconos / recursos:</p>
+              <ul>
+                <li>Freepik</li>
+                <li>Flaticon</li>
+                <li>Pexels</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 MJ — Portfolio</p>
+      <div class="footer-icons">
+        <a class="icon-btn" href="#" aria-label="GitHub">GH</a>
+        <a class="icon-btn" href="#" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="#" aria-label="Email">@</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
 </body>
 
 </html>

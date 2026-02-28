@@ -39,6 +39,15 @@ body {
     Arial,
     sans-serif;
 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 122, 0, 0.25),
+    rgba(22, 163, 74, 0.25)
+  );
+
+  color: var(--text);
+  line-height: 1.5;
+
   /* Fondo claro con manchas suaves verde/naranja */
   background:
     radial-gradient(
@@ -97,6 +106,14 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.site-header,
+.site-header a,
+.site-header .brand-text,
+.site-header .brand-text small,
+.site-header .nav a {
+  color: black;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -113,8 +130,17 @@ img {
 }
 
 .brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: white;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .brand-text {
@@ -202,17 +228,24 @@ img {
 
 .hero-text {
   padding: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 122, 0, 0.15),
+    rgba(22, 163, 74, 0.15)
+  );
+  border: 1px solid rgba(255, 122, 0, 0.25);
 }
 
 .kicker {
-  margin: 0 0 10px;
-  color: var(--muted);
+  font-family: inherit; /* usa la misma fuente que el h1 */
+  font-weight: 800; /* mismo peso fuerte */
+  font-size: 20px; /* tamaño más pequeño que el h1 */
+  color: black; /* o white si estás en fondo fuerte */
+  margin-bottom: 12px;
 }
 
 .hero-text h1 {
-  margin: 0 0 10px;
-  font-size: clamp(32px, 4.2vw, 52px);
-  line-height: 1.05;
+  font-weight: 800;
 }
 
 .lead {

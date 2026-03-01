@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
 
@@ -28,11 +29,18 @@
       </nav>
 
       <div class="header-icons" aria-label="Iconos redes">
-        <a class="icon-btn" href="#" aria-label="GitHub">GH</a>
-        <a class="icon-btn" href="#" aria-label="LinkedIn">in</a>
-        <a class="icon-btn" href="#" aria-label="Email">@</a>
+        <a class="icon-btn" href="https://github.com/mariajose-serrano" target="_blank" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+
+        <a class="icon-btn" href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+
+        <a class="icon-btn" href="mailto:mariajose-serrano@hotmail.com" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
       </div>
-    </div>
   </header>
 
   <main id="home">
@@ -136,12 +144,12 @@
           <div class="projects-grid">
 
             <article class="project-card">
-              <a href="https://tuproyecto1.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Adalab/Harry-Potter-Web-App" target="_blank" rel="noopener noreferrer">
                 <div class="thumb">
                   <img src="./images/proyecto1.jpg" alt="Preview Proyecto 01">
                 </div>
-                <h3>Proyecto 01</h3>
-                <p>Descripción corta del proyecto (1–2 líneas).</p>
+                <h3>Harry Potter Web App</h3>
+                <p>Interactive web application developed using React, state management, and dynamic content.</p>
                 <div class="meta">
                   <span class="chip">HTML</span>
                   <span class="chip">CSS</span>
@@ -153,12 +161,14 @@
             </article>
 
             <article class="project-card">
-              <a href="https://tuproyecto2.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/mariajose-serrano/Twitter-Lab-Web-App" target="_blank"
+                rel="noopener noreferrer">
                 <div class="thumb">
                   <img src="./images/proyecto2.jpg" alt="Preview Proyecto 02">
                 </div>
-                <h3>Proyecto 02</h3>
-                <p>Descripción corta del proyecto (1–2 líneas).</p>
+                <h3>Twitter Lab Web App</h3>
+                <p>Frontend project replicating core Twitter features, focused on component-based layout, UI structure,
+                  and user interaction using React.</p>
                 <div class="meta">
                   <span class="chip">HTML</span>
                   <span class="chip">CSS</span>
@@ -170,12 +180,14 @@
             </article>
 
             <article class="project-card">
-              <a href="https://tuproyecto3.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/mariajose-serrano/awesome-profile-cards" target="_blank"
+                rel="noopener noreferrer">
                 <div class="thumb">
                   <img src="./images/proyecto3.jpg" alt="Preview Proyecto 03">
                 </div>
-                <h3>Proyecto 03</h3>
-                <p>Descripción corta del proyecto (1–2 líneas).</p>
+                <h3>Awesome Profile Cards</h3>
+                <p>Interactive web app built with JavaScript, HTML, and SCSS that allows users to create and preview
+                  profile cards in real time</p>
                 <div class="meta">
                   <span class="chip">HTML</span>
                   <span class="chip">CSS</span>
@@ -249,33 +261,45 @@
           <!-- CONTACT + SKILLS -->
           <section id="contact" class="section">
             <div class="container">
+
               <div class="section-head">
                 <h2>Contact</h2>
                 <p class="sub">Let’s connect!</p>
               </div>
 
+              <!-- 👇 ESTE DIV FALTABA -->
               <div class="contact-grid">
-                <div class="panel contact">
-                  <h3>Envíame un mensaje</h3>
 
-                  <form class="form" action="#" method="post">
-                    <label>
-                      <span>Nombre</span>
-                      <input type="text" name="name" placeholder="Tu nombre" />
-                    </label>
+                <div class="panel experience">
+                  <h3>Past Experience</h3>
 
-                    <label>
-                      <span>Email</span>
-                      <input type="email" name="email" placeholder="tuemail@email.com" />
-                    </label>
+                  <div class="experience-item">
+                    <h4>SDR – Paraty Tech</h4>
+                    <span class="experience-date">2023 – 2024</span>
+                    <p>
+                      Worked with hotels across Spain and LATAM, identifying digital needs
+                      and collaborating closely with technical teams. This role sparked my
+                      interest in web development and product building.
+                    </p>
+                  </div>
 
-                    <label>
-                      <span>Mensaje</span>
-                      <textarea name="message" placeholder="Escribe tu mensaje..."></textarea>
-                    </label>
+                  <div class="experience-item">
+                    <h4>Hospitality Professional</h4>
+                    <span class="experience-date">+12 years</span>
+                    <p>
+                      Extensive experience in customer service, operations, and team coordination.
+                      Developed strong communication, problem-solving, and client-focused skills.
+                    </p>
+                  </div>
 
-                    <button class="btn primary" type="submit">Enviar</button>
-                  </form>
+                  <div class="experience-item">
+                    <h4>Full Stack Web Developer Bootcamp – Adalab</h4>
+                    <span class="experience-date">2024</span>
+                    <p>
+                      Intensive training in HTML, CSS, JavaScript, React, and Node.js.
+                      Built responsive applications and collaborated in agile team projects.
+                    </p>
+                  </div>
                 </div>
 
                 <aside class="panel skills">
@@ -320,6 +344,9 @@
   </footer>
 
   <script src="./script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
 

@@ -421,15 +421,28 @@ img {
     );
 }
 
-.project-card h3 {
-  margin: 0;
-  font-size: 16px;
+.thumb img {
+  transition: transform 0.4s ease;
 }
 
-.project-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .meta {

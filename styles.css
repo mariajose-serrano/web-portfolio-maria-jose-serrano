@@ -227,21 +227,28 @@ img {
 }
 
 .hero-text {
-  padding: 28px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 122, 0, 0.15),
-    rgba(22, 163, 74, 0.15)
-  );
-  border: 1px solid rgba(255, 122, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  border-radius: var(--radius);
+
+  background: linear-gradient(120deg, #ff7a00 20%, #2e7d32 100%);
+
+  color: black;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.lead {
+  margin: 0 0 18px;
+  color: black; /* 👈 aquí está la clave */
+  max-width: 60ch;
 }
 
 .kicker {
-  font-family: inherit; /* usa la misma fuente que el h1 */
-  font-weight: 800; /* mismo peso fuerte */
-  font-size: 20px; /* tamaño más pequeño que el h1 */
-  color: black; /* o white si estás en fondo fuerte */
-  margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 36px; /* antes 20px */
+  margin-bottom: 18px;
+  color: black;
 }
 
 .hero-text h1 {

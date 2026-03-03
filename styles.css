@@ -678,3 +678,63 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- SKILLS CARRUSEL ---------- */
+
+.skills-carousel {
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.skills-track span {
+  white-space: nowrap;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff7a00, #16a34a);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff7a00, #16a34a);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.skill-pill svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Animación */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausa al hacer hover */
+.skills-carousel:hover .skills-track {
+  animation-play-state: paused;
+}

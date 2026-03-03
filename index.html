@@ -24,15 +24,16 @@
 
       <nav class="nav">
         <a href="#about" class="btn primary">About</a>
-        <a href="#projects" class="btn primary">Projects</a>
         <a href="#skills" class="btn primary">Skills</a>
+        <a href="#projects" class="btn primary">Projects</a>
+        <a href="#experience" class="btn primary">Experience</a>
       </nav>
 
       <div class="header-icons">
-        <a class="icon-btn" href="https://github.com/mariajose-serrano" target="_blank">
+        <a class="icon-btn" href="https://github.com/mariajose-serrano" target="_blank" rel="noopener">
           <i data-lucide="github"></i>
         </a>
-        <a class="icon-btn" href="https://www.linkedin.com/" target="_blank">
+        <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
           <i data-lucide="linkedin"></i>
         </a>
         <a class="icon-btn" href="mailto:mariajose-serrano@hotmail.com">
@@ -48,6 +49,14 @@
     <section class="section hero">
       <div class="container hero-grid">
 
+        <!-- FOTO -->
+        <div class="panel hero-media">
+          <div class="media-placeholder">
+            <img src="./images/supefoto_cerca.png" alt="Maria José portrait">
+          </div>
+        </div>
+
+        <!-- TEXTO -->
         <div class="panel hero-text">
           <p class="kicker">👋 Hi, I'm Maria José</p>
           <h1>A hotelier now turned Web Developer.</h1>
@@ -63,12 +72,125 @@
           </div>
         </div>
 
-        <div class="panel hero-media">
-          <div class="media-placeholder">
-            <img src="./images/supefoto_cerca.png" alt="Maria José portrait">
-          </div>
+      </div>
+    </section>
+    <!-- SKILLS (FULL WIDTH) - DEBAJO DE ABOUT -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
         </div>
+      </div>
 
+      <!-- FULL WIDTH carousel -->
+      <div class="skills-carousel" aria-label="Skills carousel">
+        <div class="skills-track">
+          <!-- SET 1 -->
+          <span class="skill-pill"><i data-lucide="file-code"></i> HTML5</span>
+          <span class="skill-pill"><i data-lucide="palette"></i> CSS3</span>
+          <span class="skill-pill"><i data-lucide="paintbrush"></i> SASS</span>
+          <span class="skill-pill"><i data-lucide="code-2"></i> JavaScript</span>
+          <span class="skill-pill"><i data-lucide="atom"></i> React</span>
+          <span class="skill-pill"><i data-lucide="wind"></i> Tailwind CSS</span>
+          <span class="skill-pill"><i data-lucide="database"></i> MySQL</span>
+          <span class="skill-pill"><i data-lucide="send"></i> Postman</span>
+          <span class="skill-pill"><i data-lucide="server"></i> Node.js</span>
+          <span class="skill-pill"><i data-lucide="box"></i> Express</span>
+          <span class="skill-pill"><i data-lucide="users"></i> Agile & Scrum</span>
+          <span class="skill-pill"><i data-lucide="flask-conical"></i> Jest</span>
+          <span class="skill-pill"><i data-lucide="git-branch"></i> Git</span>
+          <span class="skill-pill"><i data-lucide="github"></i> GitHub</span>
+          <span class="skill-pill"><i data-lucide="cloud"></i> Render</span>
+
+          <!-- SET 2 (duplicado para loop infinito) -->
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="file-code"></i> HTML5</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="palette"></i> CSS3</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="paintbrush"></i> SASS</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="code-2"></i> JavaScript</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="atom"></i> React</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="wind"></i> Tailwind CSS</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="database"></i> MySQL</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="send"></i> Postman</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="server"></i> Node.js</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="box"></i> Express</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="users"></i> Agile & Scrum</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="flask-conical"></i> Jest</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="git-branch"></i> Git</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="github"></i> GitHub</span>
+          <span class="skill-pill" aria-hidden="true"><i data-lucide="cloud"></i> Render</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOTELS LOGO CAROUSEL -->
+    <section class="section hotels">
+      <div class="container">
+        <div class="section-head">
+          <h2>A few brands from my hospitality journey...</h2>
+        </div>
+      </div>
+
+      <div class="hotels-carousel" aria-label="Hotels logos carousel">
+        <div class="hotels-track">
+          <!-- SET 1 -->
+          <figure class="hotel-logo">
+            <img src="./images/hotels/living4malaga.png" alt="Living4Malaga">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/hotel-atarazanas.png" alt="Hotel Atarazanas">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/el-palace-barcelona.png" alt="El Palace Barcelona">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/sheraton-la-caleta.png" alt="Sheraton La Caleta">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/ac-marriott-salford-quays.png" alt="AC by Marriott Salford Quays">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/marriott-victoria-albert.png" alt="Marriott Victoria & Albert Hotel">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/hilton-barcelona.png" alt="Hotel Hilton Barcelona">
+          </figure>
+
+          <figure class="hotel-logo">
+            <img src="./images/hotels/doubletree-heathrow.png" alt="DoubleTree by Hilton London Heathrow Airport">
+          </figure>
+
+          <!-- SET 2 (duplicado para loop infinito) -->
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/living4malaga.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/hotel-atarazanas.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/el-palace-barcelona.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/sheraton-la-caleta.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/ac-marriott-salford-quays.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/marriott-victoria-albert.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/hilton-barcelona.png" alt="">
+          </figure>
+          <figure class="hotel-logo" aria-hidden="true">
+            <img src="./images/hotels/doubletree-heathrow.png" alt="">
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -79,9 +201,14 @@
         <div class="section-head">
           <h2>About Me</h2>
         </div>
-
         <div class="about-grid">
 
+          <!-- FOTO PRIMERO -->
+          <div class="panel about-media">
+            <img src="./images/photocards_ai_collage (6).png" alt="Maria José collage portrait">
+          </div>
+
+          <!-- TEXTO DESPUÉS -->
           <div class="panel about-text">
 
             <div class="note">
@@ -106,13 +233,10 @@
 
           </div>
 
-          <div class="panel about-media">
-            <img src="./images/photocards_ai_collage (6).png" alt="Maria José collage portrait">
-          </div>
-
         </div>
-      </div>
     </section>
+
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
@@ -133,11 +257,8 @@
                 <h3>Harry Potter Web App</h3>
                 <p>Interactive web application developed using React, state management, and dynamic content.</p>
                 <div class="meta">
-                  <span class="chip">HTML</span>
-                  <span class="chip">CSS</span>
-                  <span class="chip">React</span>
-                  <span class="chip">JavaScript</span>
-                  <span class="chip">Responsive</span>
+                  <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React</span>
+                  <span class="chip">JavaScript</span><span class="chip">Responsive</span>
                 </div>
               </a>
             </article>
@@ -152,11 +273,8 @@
                 <p>Frontend project replicating core Twitter features, focused on UI structure and interaction using
                   React.</p>
                 <div class="meta">
-                  <span class="chip">HTML</span>
-                  <span class="chip">CSS</span>
-                  <span class="chip">React</span>
-                  <span class="chip">JavaScript</span>
-                  <span class="chip">Responsive</span>
+                  <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React</span>
+                  <span class="chip">JavaScript</span><span class="chip">Responsive</span>
                 </div>
               </a>
             </article>
@@ -170,9 +288,7 @@
                 <h3>Awesome Profile Cards</h3>
                 <p>Web app built with JavaScript, HTML, and SCSS to create and preview profile cards in real time.</p>
                 <div class="meta">
-                  <span class="chip">HTML</span>
-                  <span class="chip">SASS</span>
-                  <span class="chip">JavaScript</span>
+                  <span class="chip">HTML</span><span class="chip">SASS</span><span class="chip">JavaScript</span>
                   <span class="chip">Responsive</span>
                 </div>
               </a>
@@ -187,9 +303,7 @@
                 <h3>Proyectos Molones Front</h3>
                 <p>Project focused on HTML, CSS, JavaScript fundamentals, layout, and responsive design.</p>
                 <div class="meta">
-                  <span class="chip">HTML</span>
-                  <span class="chip">CSS</span>
-                  <span class="chip">JavaScript</span>
+                  <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
                   <span class="chip">Responsive</span>
                 </div>
               </a>
@@ -203,10 +317,8 @@
                 <h3>Proyecto 05</h3>
                 <p>Descripción corta del proyecto (1–2 líneas).</p>
                 <div class="meta">
-                  <span class="chip">Node.js</span>
-                  <span class="chip">Express</span>
-                  <span class="chip">MySQL</span>
-                  <span class="chip">API</span>
+                  <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL</span><span
+                    class="chip">API</span>
                 </div>
               </a>
             </article>
@@ -219,9 +331,7 @@
                 <h3>Proyecto 06</h3>
                 <p>Descripción corta del proyecto (1–2 líneas).</p>
                 <div class="meta">
-                  <span class="chip">React</span>
-                  <span class="chip">Tailwind</span>
-                  <span class="chip">Responsive</span>
+                  <span class="chip">React</span><span class="chip">Tailwind</span><span class="chip">Responsive</span>
                 </div>
               </a>
             </article>
@@ -234,186 +344,47 @@
 
     <!-- BREAK IMAGE -->
     <section class="break">
-      <img src="./images/fotoespejoreflejo.jpeg" class="break-img">
+      <img src="./images/fotoespejoreflejo.jpeg" class="break-img" alt="Break photo">
     </section>
 
-    <!-- SKILLS (FULL WIDTH) -->
-    <section id="skills" class="section">
+    <!-- PAST EXPERIENCE (SECCIÓN FINAL) -->
+    <section id="experience" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Skills</h2>
+          <h2>Past Experience</h2>
         </div>
 
-        <div class="skills-carousel">
-          <div class="skills-track">
+        <div class="panel experience">
+          <div class="experience-item">
+            <h4>SDR – Paraty Tech</h4>
+            <span class="experience-date">2023 – 2024</span>
+            <p>
+              Worked with hotels across Spain and LATAM, identifying digital needs and collaborating closely with
+              technical teams.
+              This role sparked my interest in web development and product building.
+            </p>
+          </div>
 
-            <!-- SET 1 -->
-            <span class="skill-pill">
-              <i data-lucide="file-code"></i> HTML5
-            </span>
+          <div class="experience-item">
+            <h4>Hospitality Professional</h4>
+            <span class="experience-date">+12 years</span>
+            <p>
+              Extensive experience in customer service, operations, and team coordination.
+              Developed strong communication, problem-solving, and client-focused skills.
+            </p>
+          </div>
 
-            <span class="skill-pill">
-              <i data-lucide="palette"></i> CSS3
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="paintbrush"></i> SASS
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="code-2"></i> JavaScript
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="atom"></i> React
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="wind"></i> Tailwind CSS
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="database"></i> MySQL
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="send"></i> Postman
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="server"></i> Node.js
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="box"></i> Express
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="users"></i> Agile & Scrum
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="flask-conical"></i> Jest
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="git-branch"></i> Git
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="github"></i> GitHub
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="cloud"></i> Render
-            </span>
-
-            <!-- DUPLICADO para efecto infinito -->
-            <!-- (puedes copiar todo lo anterior y pegarlo debajo) -->
-
+          <div class="experience-item">
+            <h4>Full Stack Web Developer Bootcamp – Adalab</h4>
+            <span class="experience-date">2024</span>
+            <p>
+              Intensive training in HTML, CSS, JavaScript, React, and Node.js.
+              Built responsive applications and collaborated in agile team projects.
+            </p>
           </div>
         </div>
-
-        <!-- SET 2 (duplicado para loop infinito) -->
-        <div class="skills-carousel">
-          <div class="skills-track">
-
-            <!-- SET 1 -->
-            <span class="skill-pill">
-              <i data-lucide="file-code"></i> HTML5
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="palette"></i> CSS3
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="paintbrush"></i> SASS
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="code-2"></i> JavaScript
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="atom"></i> React
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="wind"></i> Tailwind CSS
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="database"></i> MySQL
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="send"></i> Postman
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="server"></i> Node.js
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="box"></i> Express
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="users"></i> Agile & Scrum
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="flask-conical"></i> Jest
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="git-branch"></i> Git
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="github"></i> GitHub
-            </span>
-
-            <span class="skill-pill">
-              <i data-lucide="cloud"></i> Render
-            </span>
-
-            <!-- DUPLICADO para efecto infinito -->
-            <!-- (puedes copiar todo lo anterior y pegarlo debajo) -->
-
-          </div>
-        </div>
-
-        <!-- EXPERIENCE -->
-        <section id="experience" class="section">
-          <div class="container">
-
-            <div class="section-head">
-              <h2>Past Experience</h2>
-            </div>
-
-            <div class="panel experience">
-
-              <div class="experience-item">
-                <h4>SDR – Paraty Tech</h4>
-                <span class="experience-date">2023 – 2024</span>
-              </div>
-
-              <div class="experience-item">
-                <h4>Hospitality Professional</h4>
-                <span class="experience-date">+12 years</span>
-              </div>
-
-              <div class="experience-item">
-                <h4>Full Stack Developer Bootcamp – Adalab</h4>
-                <span class="experience-date">2024</span>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
+      </div>
+    </section>
 
   </main>
 

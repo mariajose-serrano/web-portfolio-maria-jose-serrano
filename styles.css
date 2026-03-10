@@ -350,6 +350,11 @@ img {
 
 /* PROJECTS */
 
+.github-projects {
+  font-size: 14px;
+  padding: 8px 14px;
+}
+
 .projects-grid {
   display: grid;
 

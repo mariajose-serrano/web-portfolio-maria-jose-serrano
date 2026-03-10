@@ -34,7 +34,6 @@ body {
     Roboto,
     Arial,
     sans-serif;
-
   background:
     radial-gradient(
       900px 450px at 10% 0%,
@@ -52,7 +51,6 @@ body {
       transparent 60%
     ),
     var(--bg);
-
   color: var(--text);
   line-height: 1.5;
 }
@@ -115,7 +113,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: white;
   font-weight: 800;
@@ -246,11 +243,6 @@ img {
   margin: 0 0 18px;
   color: var(--text);
   max-width: 60ch;
-  .lead {
-    margin: 0 0 18px;
-    color: var(--text);
-    max-width: 60ch;
-  }
 }
 
 .btn.primary {
@@ -258,12 +250,13 @@ img {
   font-weight: 700;
 }
 
-/*botones con letras en negro*/
 .nav a.btn.primary {
   color: black;
 }
 
-/* SKILLS */
+/* SKILLS + HOTELS */
+
+/* SKILLS + HOTELS */
 
 .skills-carousel,
 .hotels-carousel {
@@ -279,14 +272,25 @@ img {
 .skills-track,
 .hotels-track {
   display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 20px;
   width: max-content;
+  white-space: nowrap;
   padding: 0 24px;
-  animation: scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.skills-track {
+  animation: skills-marquee 22s linear infinite;
+}
+
+.hotels-track {
+  animation: hotels-marquee 28s linear infinite;
 }
 
 .skill-pill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
@@ -294,39 +298,45 @@ img {
   background: linear-gradient(135deg, #ff7a00, #16a34a);
   color: white;
   font-weight: 700;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
-
-/* HOTELS */
 
 .hotel-logo {
   width: 160px;
   height: 72px;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hotel-logo img {
+  width: auto;
   height: 90px;
   object-fit: contain;
+  display: block;
+}
+
+.skills-carousel:hover .skills-track,
+.hotels-carousel:hover .hotels-track {
+  animation-play-state: paused;
 }
 
 /* ABOUT */
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr; /* foto izquierda | texto derecha */
+  grid-template-columns: 0.7fr 1.3fr;
   gap: 18px;
   align-items: stretch;
 }
 
 .about-text {
-  .about-text {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .about-media {
@@ -357,25 +367,19 @@ img {
 
 .projects-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 20px;
-
   align-items: stretch;
 }
+
 .project-card {
   background: linear-gradient(120deg, #ff7a00 20%, #2e7d32 100%);
-
   border-radius: var(--radius);
   border: 1px solid var(--line);
-
   padding: 16px;
-
   display: flex;
   flex-direction: column;
   gap: 14px;
-
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -459,7 +463,7 @@ img {
 
 .connect-grid {
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr; /* foto pequeña | texto grande */
+  grid-template-columns: 0.7fr 1.3fr;
   gap: 18px;
   align-items: stretch;
 }
@@ -475,12 +479,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  .connect-media {
-    border-radius: var(--radius);
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-  }
+  display: block;
 }
 
 .connect-panel {
@@ -505,30 +504,29 @@ img {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 24px 0;
+  padding: 28px 0;
+  margin-top: 40px;
 }
 
 .footer-inner {
   display: flex;
-  justify-content: center;
-}
-
-.meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: auto;
-}
-
-.chip {
-  display: inline-flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.18);
-  color: black;
+}
+
+.footer-inner p {
+  margin: 0;
   font-size: 14px;
+}
+
+.footer-top {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-top:hover {
+  color: var(--accent);
 }
 
 /* ANIMATION */
@@ -566,14 +564,20 @@ img {
   }
 }
 
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
+@keyframes skills-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-@media (max-width: 560px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+@keyframes hotels-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

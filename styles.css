@@ -332,30 +332,38 @@ img {
   align-items: stretch;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
 .about-text {
   padding: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 16px;
+  height: 100%;
 }
 
 .about-media {
   border-radius: var(--radius);
   overflow: hidden;
-  height: 400px;
+  object-fit: cover;
 }
 
 .about-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .note {
-  border: 1px solid var(--line);
-  padding: 16px;
-  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* PROJECTS */

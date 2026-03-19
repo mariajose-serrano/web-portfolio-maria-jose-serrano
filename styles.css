@@ -412,6 +412,10 @@ img {
 
 /* PROJECTS */
 
+#projects {
+  background: linear-gradient(180deg, #f6f7f4 0%, #fdf7f2 40%, #f2f7f3 100%);
+}
+
 .github-projects {
   font-size: 14px;
   padding: 8px 14px;
@@ -440,6 +444,39 @@ img {
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+#projects {
+  position: relative;
+  overflow: hidden;
+}
+
+#projects::before,
+#projects::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: 0;
+}
+
+#projects::before {
+  background: #ff7a00;
+  top: -100px;
+  left: -100px;
+}
+
+#projects::after {
+  background: #16a34a;
+  bottom: -100px;
+  right: -100px;
+}
+
+#projects .container {
+  position: relative;
+  z-index: 1;
 }
 
 .thumb {

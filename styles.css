@@ -346,6 +346,36 @@ img {
   flex: 0 0 auto;
 }
 
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: black;
+
+  /* 👇 BORDE NEGRO */
+  border: 1.5px solid black;
+
+  transition: all 0.25s ease;
+}
+
+/* ✨ HOVER */
+.chip:hover {
+  transform: translateY(-3px) scale(1.05);
+
+  /* borde más visible */
+  border: 1.5px solid black;
+
+  /* glow suave */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  filter: brightness(1.1);
+}
+
 .hotel-logo {
   width: 160px;
   height: 72px;
@@ -499,17 +529,6 @@ img {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: auto;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.18);
-  color: black;
-  font-size: 14px;
 }
 
 /* BREAK */

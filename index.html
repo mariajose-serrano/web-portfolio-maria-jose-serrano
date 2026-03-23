@@ -23,7 +23,7 @@
         </span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav nav-desktop">
         <a href="#about" class="btn primary">About</a>
         <a href="projectssection.html" class="btn primary">Projects</a>
         <a href="#experience" class="btn primary">Experience & Certifications</a>
@@ -43,6 +43,17 @@
       </div>
     </div>
   </header>
+
+  <button class="hamburger" aria-label="Toggle menu">
+    <i data-lucide="menu"></i>
+  </button>
+
+  <nav class="nav nav-mobile">
+    <a href="#about" class="btn primary">About</a>
+    <a href="projectssection.html" class="btn primary">Projects</a>
+    <a href="#experience" class="btn primary">Experience & Certifications</a>
+    <a href="#connect" class="btn primary">Contact me!</a>
+  </nav>
 
   <main id="home">
 
@@ -242,10 +253,10 @@
       </div>
     </section>
 
-    <!-- BREAK IMAGE -->
-    <section class="break">
-      <img src="./images/fotoespejoreflejo.jpeg" class="break-img" alt="Break photo">
-    </section>
+    <!-- BREAK -->
+    <div class="container">
+      <hr class="separator">
+    </div>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
@@ -255,73 +266,45 @@
           <h2>Experience & Certifications</h2>
         </div>
 
-        <!-- PAST EXPERIENCE -->
-        <div class="panel experience">
+        <div class="timeline">
 
-          <h3>Past Experience</h3>
-
-          <div class="experience-item">
-            <h4>Sales Development Representative – Paraty Tech</h4>
-            <span class="experience-date">2024 – 2025</span>
-            <p>
-              Worked as an SDR at Paraty Tech, generating leads from hotels across Spain and LATAM, identifying their
-              digital needs, and collaborating with technical teams to help deliver tailored website solutions.
-            </p>
+          <div class="timeline-item">
+            <span class="timeline-tag tag-certification">Certification</span>
+            <span class="timeline-date">2026</span>
+            <h4>IFCT0078 – Creation, development & Web pages design. Junta de Andalucia. Grupo Alce</h4>
+            <p>Currently studying. Based in HTML, CSS and Javascript, also some Design tools such as WordPress.</p>
           </div>
 
-          <div class="experience-item">
-            <h4>Hospitality Professional</h4>
-            <span class="experience-date">+12 years</span>
-            <p>
-              Extensive experience in customer service, operations, and team coordination.
-              Developed strong communication, problem-solving, and client-focused skills.
-              I have worked in Reception & Reservations Department from prestigious brands such as Hilton, Sheraton,
-              Marriott, El Palace. To see details, please check my Linkedin site.
-            </p>
-          </div>
-
-        </div>
-
-
-        <!-- CERTIFICATIONS -->
-        <div class="panel certifications">
-
-          <h3>Certifications</h3>
-
-          <div class="experience-item">
+          <div class="timeline-item">
+            <span class="timeline-tag tag-certification">Certification</span>
+            <span class="timeline-date">2025</span>
             <h4>Full Stack Web Developer Bootcamp – Adalab Tech School</h4>
-            <span class="experience-date">2025</span>
-            <p>
-              Intensive training in HTML, CSS, JavaScript, React and Node.js.
-              Built responsive applications and collaborated in agile team projects.
-            </p>
-
-            <a href="./images/diplomaadalab.png" target="_blank" class="btn primary certificate-btn">
-              View Certificate
-            </a>
+            <p>Intensive training in HTML, CSS, JavaScript, React and Node.js. Built responsive applications in agile
+              teams.</p>
+            <a href="./images/diplomaadalab.png" target="_blank" class="timeline-link">View Certificate</a>
           </div>
 
-
-          <div class="experience-item">
-            <h4> IFCT0078– Creation, development & Web pages design. Junta de Andalucia. Grupo Alce</h4>
-            <span class="experience-date">2026</span>
-            <p>
-              Currently studying. Cursed based in HTML, CSS and Javascript, also some Design tools such as Word Press
-              to understand user experience and modern web standards.
-            </p>
-
-            <a href="x" target="_blank" class="btn primary certificate-btn">
-              View Certificate
-            </a>
+          <div class="timeline-item">
+            <span class="timeline-tag tag-experience">Experience</span>
+            <span class="timeline-date">2024 – 2025</span>
+            <h4>Sales Development Representative – Paraty Tech</h4>
+            <p>Generated leads from hotels across Spain and LATAM, identifying digital needs and collaborating with
+              technical teams.</p>
           </div>
 
-          <div class="experience-item">
-            <h4>Degree in Tourism. Jaén University (Spain)</h4>
-            <span class="experience-date"> 2010</span>
-            <p>
-              Academic background focused on hospitality, tourism management
-              and international customer service.
-            </p>
+          <div class="timeline-item">
+            <span class="timeline-tag tag-experience">Experience</span>
+            <span class="timeline-date">+12 years</span>
+            <h4>Hospitality Professional</h4>
+            <p>Reception & Reservations at Hilton, Sheraton, Marriott, El Palace. Strong communication and
+              client-focused skills.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-tag tag-certification">Education</span>
+            <span class="timeline-date">2010</span>
+            <h4>Degree in Tourism – Jaén University (Spain)</h4>
+            <p>Hospitality, tourism management and international customer service.</p>
           </div>
 
         </div>
@@ -389,6 +372,25 @@
 
   <script>
     lucide.createIcons();
+
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-mobile');
+
+    function toggleMenu() {
+      const isOpen = nav.classList.toggle('nav-open');
+      hamburger.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+      lucide.createIcons();
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+
+    nav.addEventListener('click', (e) => {
+      if (e.target.closest('a')) {
+        nav.classList.remove('nav-open');
+        hamburger.innerHTML = '<i data-lucide="menu"></i>';
+        lucide.createIcons();
+      }
+    });
   </script>
 
 </body>

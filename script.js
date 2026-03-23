@@ -1,9 +1,6 @@
 const canvas = document.getElementById("miCanvas");
 const ctx = canvas.getContext("2d");
 
-const img = new Image();
-img.src = "./images/fotoespejoreflejo.jpeg";
-
 img.onload = function () {
   const pieces = 6;
   const pieceWidth = canvas.width / pieces;

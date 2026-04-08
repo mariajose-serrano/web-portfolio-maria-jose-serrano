@@ -663,6 +663,17 @@ img {
   gap: 14px;
 }
 
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  transition: 0.2s;
+  color: var(--text); /* 👈 añade esto */
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -720,6 +731,26 @@ img {
 @media (max-width: 560px) {
   .nav-desktop {
     display: none;
+  }
+
+  /* Ocultar la nav de botones en móvil */
+  .nav {
+    display: none;
+  }
+
+  /* Asegurar que los iconos sean siempre visibles */
+  .header-icons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.6);
   }
 
   .nav-mobile {

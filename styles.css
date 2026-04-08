@@ -778,17 +778,24 @@ img {
   }
 
   .hamburger {
-    position: fixed;
-    top: 18px;
-    right: 18px;
-    z-index: 300;
+    display: none;
     background: var(--accent);
     color: white;
     border: none;
     border-radius: 14px;
     width: 44px;
     height: 44px;
+    cursor: pointer;
+    place-items: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 560px) {
+    .hamburger {
+      display: grid;
+      /* Elimina position: fixed, top, right, z-index */
+    }
   }
 
   .projects-grid {

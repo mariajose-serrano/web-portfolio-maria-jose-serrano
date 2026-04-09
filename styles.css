@@ -228,6 +228,8 @@ img {
   cursor: pointer;
   place-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 300; /* 👈 añade esto */
+  position: relative; /* 👈 y esto, necesario para que z-index funcione */
 }
 
 @media (max-width: 560px) {

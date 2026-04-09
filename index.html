@@ -379,7 +379,9 @@
 
     function toggleMenu() {
       const isOpen = nav.classList.toggle('nav-open');
-      hamburger.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+      hamburger.innerHTML = isOpen
+        ? '<i data-lucide="x"></i>'
+        : '<i data-lucide="menu"></i>';
       lucide.createIcons();
     }
 

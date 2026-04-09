@@ -214,18 +214,25 @@ img {
 }
 
 .hamburger {
-  display: none;
-  background: none;
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 300; /* nav-mobile tiene 200, este debe ser mayor */
+  background: var(--accent);
+  color: white;
   border: none;
+  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  display: none;
   cursor: pointer;
-  padding: 8px;
-  color: var(--text);
+  place-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 560px) {
   .hamburger {
     display: grid;
-    place-items: center;
   }
 }
 

@@ -1618,3 +1618,10 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Reducir tamaño fuente automático ─────────────────────────────────*/
+
+.nav a.btn.primary {
+  white-space: nowrap;
+  font-size: clamp(11px, 1.1vw, 14px);
+}

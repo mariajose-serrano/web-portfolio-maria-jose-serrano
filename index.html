@@ -19,18 +19,21 @@
         <span class="brand-logo">MJ</span>
         <span class="brand-text">
           <strong>My Portfolio</strong>
-          <small>Front End Developer Junior</small>
+          <small data-en="Front End Developer Junior" data-es="Desarrolladora Front End Junior">Front End Developer
+            Junior</small>
         </span>
       </a>
 
       <nav class="nav nav-desktop">
-        <a href="#about" class="btn primary">About</a>
-        <a href="projectssection.html" class="btn primary">Projects</a>
-        <a href="#experience" class="btn primary">Experience & Certifications</a>
-        <a href="#connect" class="btn primary">Contact me!</a>
+        <a href="#about" class="btn primary" data-en="About" data-es="Sobre mí">About</a>
+        <a href="projectssection.html" class="btn primary" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#experience" class="btn primary" data-en="Experience & Certifications"
+          data-es="Experiencia y Certificaciones">Experience & Certifications</a>
+        <a href="#connect" class="btn primary" data-en="Contact me!" data-es="¡Contáctame!">Contact me!</a>
       </nav>
 
       <div class="header-icons">
+        <button class="lang-btn" id="langToggle" aria-label="Toggle language">🌐 ES</button>
         <a class="icon-btn" href="https://github.com/mariajose-serrano" target="_blank" rel="noopener">
           <i data-lucide="github"></i>
         </a>
@@ -40,46 +43,50 @@
         <a class="icon-btn" href="mailto:mariajose-serrano@hotmail.com">
           <i data-lucide="mail"></i>
         </a>
-
+      </div>
+    </div>
   </header>
 
-
   <nav class="nav nav-mobile">
-    <a href="#about" class="btn primary">About</a>
-    <a href="projectssection.html" class="btn primary">Projects</a>
-    <a href="#experience" class="btn primary">Experience & Certifications</a>
-    <a href="#connect" class="btn primary">Contact me!</a>
+    <a href="#about" class="btn primary" data-en="About" data-es="Sobre mí">About</a>
+    <a href="projectssection.html" class="btn primary" data-en="Projects" data-es="Proyectos">Projects</a>
+    <a href="#experience" class="btn primary" data-en="Experience & Certifications"
+      data-es="Experiencia y Certificaciones">Experience & Certifications</a>
+    <a href="#connect" class="btn primary" data-en="Contact me!" data-es="¡Contáctame!">Contact me!</a>
   </nav>
 
   <main id="home">
 
     <!-- HERO -->
     <section class="section hero">
-
       <div class="container hero-grid">
 
-        <!-- FOTO -->
         <div class="panel hero-media">
           <div class="media-placeholder">
             <img src="./images/photopresentation.jpeg" alt="Maria José portrait">
           </div>
         </div>
 
-        <!-- TEXTO -->
         <div class="panel hero-text">
-          <p class="kicker">Hi, I'm Maria José!</p>
-          <h1>A hotelier now turned Web Developer.</h1>
+          <p class="kicker" data-en="Hi, I'm Maria José!" data-es="¡Hola, soy Maria José!">Hi, I'm Maria José!</p>
 
-          <p class="lead">
+          <h1 data-en="A hotelier now turned Web Developer." data-es="Una hotelera reconvertida en Desarrolladora Web.">
+            A hotelier now turned Web Developer.</h1>
+
+          <p class="lead"
+            data-en="With a career in hospitality, I decided to steer my goals towards the software development industry. My motivation prompted me to take the plunge and graduate from a Full Stack Web Development Bootcamp. Ever since, I have actively been focused on enhancing my skills as a Front-End Developer to understand and translate users' needs into code, in a clean and professional way."
+            data-es="Con una trayectoria en hostelería, decidí orientar mis metas hacia la industria del desarrollo de software. Mi motivación me impulsó a dar el salto y graduarme en un Bootcamp de Desarrollo Web Full Stack. Desde entonces, me he centrado activamente en mejorar mis habilidades como Desarrolladora Front-End para traducir las necesidades de los usuarios en código, de forma limpia y profesional.">
             With a career in hospitality, I decided to steer my goals towards the software development industry. My
             motivation prompted me to take the plunge and graduate from a <strong>Full Stack Web Development
-              Bootcamp.</strong> Ever
-            since, I have actively been focused on enhancing my skills as a Front-End Developer to understand translate
+              Bootcamp.</strong>
+            Ever since, I have actively been focused on enhancing my skills as a Front-End Developer to understand and
+            translate
             users' needs into code, in a clean and professional way.
           </p>
 
           <div class="actions">
-            <a href="projectssection.html" class="btn primary">View Projects</a>
+            <a href="projectssection.html" class="btn primary" data-en="View Projects" data-es="Ver Proyectos">View
+              Projects</a>
           </div>
         </div>
 
@@ -90,12 +97,10 @@
     <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Skills</h2>
+          <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
         </div>
-
         <div class="skills-carousel" aria-label="Skills carousel">
           <div class="skills-track">
-            <!-- SET 1 -->
             <span class="skill-pill"><i data-lucide="file-code"></i> HTML5</span>
             <span class="skill-pill"><i data-lucide="palette"></i> CSS3</span>
             <span class="skill-pill"><i data-lucide="code-2"></i> JavaScript</span>
@@ -108,8 +113,6 @@
             <span class="skill-pill"><i data-lucide="git-branch"></i> Git</span>
             <span class="skill-pill"><i data-lucide="github"></i> GitHub</span>
             <span class="skill-pill"><i data-lucide="cloud"></i> Render</span>
-
-            <!-- SET 2 -->
             <span class="skill-pill" aria-hidden="true"><i data-lucide="file-code"></i> HTML5</span>
             <span class="skill-pill" aria-hidden="true"><i data-lucide="palette"></i> CSS3</span>
             <span class="skill-pill" aria-hidden="true"><i data-lucide="code-2"></i> JavaScript</span>
@@ -131,78 +134,41 @@
     <section class="section hotels">
       <div class="container">
         <div class="section-head">
-          <h2>A few brands from my hospitality journey...</h2>
+          <h2 data-en="A few brands from my hospitality journey..."
+            data-es="Algunas marcas de mi trayectoria en hostelería...">A few brands from my hospitality journey...</h2>
         </div>
-
         <div class="hotels-carousel" aria-label="Hotels logos carousel">
           <div class="hotels-track">
-
-            <!-- SET 1 -->
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logoliving4malaga.png" alt="Logo Living4Malaga">
+            <figure class="hotel-logo"><img src="./images.hotels/logoliving4malaga.png" alt="Logo Living4Malaga">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logoatarazanas.jpg" alt="Logo Hotel Atarazanas">
+            <figure class="hotel-logo"><img src="./images.hotels/logoatarazanas.jpg" alt="Logo Hotel Atarazanas">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logoelpalacebarcelona.jpeg" alt="Logo Hotel Palace Barcelona">
+            <figure class="hotel-logo"><img src="./images.hotels/logoelpalacebarcelona.jpeg"
+                alt="Logo Hotel Palace Barcelona"></figure>
+            <figure class="hotel-logo"><img src="./images.hotels/logosheratonlacaletatenerife.jpg"
+                alt="Logo Sheraton La Caleta"></figure>
+            <figure class="hotel-logo"><img src="./images.hotels/logoacsalfordquays.png" alt="Logo AC Salford Quays">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logosheratonlacaletatenerife.jpg" alt="Logo Sheraton La Caleta">
+            <figure class="hotel-logo"><img src="./images.hotels/marriottvictoriaandalbert.png"
+                alt="Logo Marriott Victoria & Albert"></figure>
+            <figure class="hotel-logo"><img src="./images.hotels/logohiltonbcn.png" alt="Logo Hilton Barcelona">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logoacsalfordquays.png" alt="Logo AC Salford Quays">
+            <figure class="hotel-logo"><img src="./images.hotels/logodoubletreebyhilton.png"
+                alt="Logo DoubleTree by Hilton"></figure>
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logoliving4malaga.png" alt="">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/marriottvictoriaandalbert.png" alt="Logo Marriott Victoria & Albert">
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logoatarazanas.jpg" alt=""></figure>
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logoelpalacebarcelona.jpeg" alt="">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logohiltonbcn.png" alt="Logo Hilton Barcelona">
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logosheratonlacaletatenerife.jpg"
+                alt=""></figure>
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logoacsalfordquays.png" alt="">
             </figure>
-
-            <figure class="hotel-logo">
-              <img src="./images.hotels/logodoubletreebyhilton.png" alt="Logo DoubleTree by Hilton">
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/marriottvictoriaandalbert.png"
+                alt=""></figure>
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logohiltonbcn.png" alt=""></figure>
+            <figure class="hotel-logo" aria-hidden="true"><img src="./images.hotels/logodoubletreebyhilton.png" alt="">
             </figure>
-
-            <!-- SET 2 -->
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logoliving4malaga.png" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logoatarazanas.jpg" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logoelpalacebarcelona.jpeg" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logosheratonlacaletatenerife.jpg" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logoacsalfordquays.png" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/marriottvictoriaandalbert.png" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logohiltonbcn.png" alt="">
-            </figure>
-
-            <figure class="hotel-logo" aria-hidden="true">
-              <img src="./images.hotels/logodoubletreebyhilton.png" alt="">
-            </figure>
-
           </div>
         </div>
       </div>
@@ -212,39 +178,36 @@
     <section id="about" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>About Me</h2>
+          <h2 data-en="About Me" data-es="Sobre Mí">About Me</h2>
         </div>
-
         <div class="about-grid">
-
           <div class="panel about-media">
             <img src="./images/fotocactus.jpeg" alt="Maria José collage portrait">
           </div>
-
           <div class="panel about-text">
             <div class="note">
-              <h3>A bit more about me...</h3>
-              <p>
+              <h3 data-en="A bit more about me..." data-es="Un poco más sobre mí...">A bit more about me...</h3>
+              <p data-en="Based in Malaga, with a Hospitality background and a degree in Tourism, my curiosity about coding started while working as an SDR at Paraty Tech, a leading company in hotel solutions specializing in direct bookings & revenue optimization. Collaborating with technical teams and understanding client digital needs sparked my interest in web development."
+                data-es="Basada en Málaga, con experiencia en Hostelería y una licenciatura en Turismo, mi curiosidad por la programación comenzó mientras trabajaba como SDR en Paraty Tech, empresa líder en soluciones hoteleras especializada en reservas directas y optimización de ingresos. Colaborar con equipos técnicos y entender las necesidades digitales de los clientes despertó mi interés por el desarrollo web.">
                 Based in Malaga, with a Hospitality background and a degree in Tourism,
                 my curiosity about coding started while working as an <strong>SDR at Paraty Tech,</strong>
                 a leading company in hotel solutions specializing in direct bookings & revenue optimization.
-                Collaborating with technical teams and understanding client digital needs -sparked
-                my interest in web development.
+                Collaborating with technical teams and understanding client digital needs sparked my interest in web
+                development.
               </p>
             </div>
-
             <div class="note">
-              <h3>Passionate about coding...</h3>
-              <p>
+              <h3 data-en="Passionate about coding..." data-es="Apasionada por el código...">Passionate about coding...
+              </h3>
+              <p data-en="I graduated from a Full Stack Web Developer Bootcamp at Adalab, where I built real-world projects using HTML, CSS, JavaScript, React and Node.js. I find myself continuously learning and expanding my knowledge in modern development practices. You can see my projects in the Projects section."
+                data-es="Me gradué en el Bootcamp de Desarrollo Web Full Stack de Adalab, donde desarrollé proyectos reales usando HTML, CSS, JavaScript, React y Node.js. Me encuentro en continuo aprendizaje, ampliando mis conocimientos en prácticas modernas de desarrollo. Puedes ver mis proyectos en la sección de Proyectos.">
                 I graduated from a <strong>Full Stack Web Developer Bootcamp</strong> at Adalab,
-                where I built real-world projects using <strong>HTML, CSS, JavaScript,
-                  React and Node.js.</strong> I find myself continuously learning and expanding my
-                knowledge in modern development practices.
-                Yoy can see my projects in the Projects section.
+                where I built real-world projects using <strong>HTML, CSS, JavaScript, React and Node.js.</strong>
+                I find myself continuously learning and expanding my knowledge in modern development practices.
+                You can see my projects in the Projects section.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -257,97 +220,103 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="container">
-
         <div class="section-head">
-          <h2>Experience & Certifications</h2>
+          <h2 data-en="Experience & Certifications" data-es="Experiencia y Certificaciones">Experience & Certifications
+          </h2>
         </div>
-
         <div class="timeline">
 
           <div class="timeline-item">
-            <span class="timeline-tag tag-certification">Certification</span>
+            <span class="timeline-tag tag-certification" data-en="Certification"
+              data-es="Certificación">Certification</span>
             <span class="timeline-date">2026</span>
-            <h4>IFCT0078 – Creation, development & Web pages design. Junta de Andalucia. Grupo Alce</h4>
-            <p>Currently studying. Based in HTML, CSS and Javascript, also some Design tools such as WordPress.</p>
+            <h4 data-en="IFCT0078 – Creation, development & Web pages design. Junta de Andalucia. Grupo Alce"
+              data-es="IFCT0078 – Creación, desarrollo y diseño de páginas Web. Junta de Andalucía. Grupo Alce">
+              IFCT0078 – Creation, development & Web pages design. Junta de Andalucia. Grupo Alce</h4>
+            <p data-en="Currently studying. Based in HTML, CSS and Javascript, also some Design tools such as WordPress."
+              data-es="Actualmente en curso. Basado en HTML, CSS y Javascript, así como herramientas de diseño como WordPress.">
+              Currently studying. Based in HTML, CSS and Javascript, also some Design tools such as WordPress.</p>
           </div>
 
           <div class="timeline-item">
-            <span class="timeline-tag tag-certification">Certification</span>
+            <span class="timeline-tag tag-certification" data-en="Certification"
+              data-es="Certificación">Certification</span>
             <span class="timeline-date">2025</span>
-            <h4>Full Stack Web Developer Bootcamp – Adalab Tech School</h4>
-            <p>Intensive training in HTML, CSS, JavaScript, React and Node.js. Built responsive applications in agile
+            <h4 data-en="Full Stack Web Developer Bootcamp – Adalab Tech School"
+              data-es="Bootcamp de Desarrollo Web Full Stack – Adalab Tech School">
+              Full Stack Web Developer Bootcamp – Adalab Tech School</h4>
+            <p data-en="Intensive training in HTML, CSS, JavaScript, React and Node.js. Built responsive applications in agile teams."
+              data-es="Formación intensiva en HTML, CSS, JavaScript, React y Node.js. Desarrollo de aplicaciones responsive en equipos ágiles.">
+              Intensive training in HTML, CSS, JavaScript, React and Node.js. Built responsive applications in agile
               teams.</p>
-            <a href="./images/diplomaadalab.png" target="_blank" class="timeline-link">View Certificate</a>
+            <a href="./images/diplomaadalab.png" target="_blank" class="timeline-link" data-en="View Certificate"
+              data-es="Ver Certificado">View Certificate</a>
           </div>
 
           <div class="timeline-item">
-            <span class="timeline-tag tag-experience">Experience</span>
+            <span class="timeline-tag tag-experience" data-en="Experience" data-es="Experiencia">Experience</span>
             <span class="timeline-date">2024 – 2025</span>
-            <h4>Sales Development Representative – Paraty Tech</h4>
-            <p>Generated leads from hotels across Spain and LATAM, identifying digital needs and collaborating with
+            <h4 data-en="Sales Development Representative – Paraty Tech"
+              data-es="Representante de Desarrollo de Ventas – Paraty Tech">
+              Sales Development Representative – Paraty Tech</h4>
+            <p data-en="Generated leads from hotels across Spain and LATAM, identifying digital needs and collaborating with technical teams."
+              data-es="Generación de leads en hoteles de España y LATAM, identificando necesidades digitales y colaborando con equipos técnicos.">
+              Generated leads from hotels across Spain and LATAM, identifying digital needs and collaborating with
               technical teams.</p>
           </div>
 
           <div class="timeline-item">
-            <span class="timeline-tag tag-experience">Experience</span>
+            <span class="timeline-tag tag-experience" data-en="Experience" data-es="Experiencia">Experience</span>
             <span class="timeline-date">+12 years</span>
-            <h4>Hospitality Professional</h4>
-            <p>Reception & Reservations at Hilton, Sheraton, Marriott, El Palace. Strong communication and
-              client-focused skills.</p>
+            <h4 data-en="Hospitality Professional" data-es="Profesional de Hostelería">Hospitality Professional</h4>
+            <p data-en="Reception & Reservations at Hilton, Sheraton, Marriott, El Palace. Strong communication and client-focused skills."
+              data-es="Recepción y Reservas en Hilton, Sheraton, Marriott, El Palace. Sólidas habilidades de comunicación y orientación al cliente.">
+              Reception & Reservations at Hilton, Sheraton, Marriott, El Palace. Strong communication and client-focused
+              skills.</p>
           </div>
 
           <div class="timeline-item">
-            <span class="timeline-tag tag-certification">Education</span>
+            <span class="timeline-tag tag-certification" data-en="Education" data-es="Educación">Education</span>
             <span class="timeline-date">2010</span>
-            <h4>Degree in Tourism UJA– Jaén University (Spain)</h4>
-            <p>Hospitality, tourism management and international customer service.</p>
+            <h4 data-en="Degree in Tourism UJA – Jaén University (Spain)"
+              data-es="Licenciatura en Turismo UJA – Universidad de Jaén (España)">
+              Degree in Tourism UJA – Jaén University (Spain)</h4>
+            <p data-en="Hospitality, tourism management and international customer service."
+              data-es="Hostelería, gestión del turismo y atención al cliente internacional.">
+              Hospitality, tourism management and international customer service.</p>
           </div>
 
         </div>
-
       </div>
     </section>
-
 
     <!-- LET'S CONNECT -->
     <section id="connect" class="section connect">
       <div class="container connect-grid">
-
         <div class="panel connect-media">
           <img src="./images/photocontactme.jpeg" alt="Maria José working">
         </div>
-
         <div class="panel connect-panel">
-          <h2>Let’s connect!</h2>
-
-          <p class="connect-text">
-            I am currently open to new opportunities and collaborations is Spain & abroad .
+          <h2 data-en="Let's connect!" data-es="¡Conectemos!">Let's connect!</h2>
+          <p class="connect-text"
+            data-en="I am currently open to new opportunities and collaborations in Spain & abroad. Feel free to reach out — I would love to hear from you."
+            data-es="Actualmente estoy abierta a nuevas oportunidades y colaboraciones en España y en el extranjero. No dudes en contactarme — me encantaría saber de ti.">
+            I am currently open to new opportunities and collaborations in Spain & abroad.
             Feel free to reach out — I would love to hear from you.
           </p>
-
           <div class="connect-icons">
-            <a href="https://github.com/mariajose-serrano" target="_blank" rel="noopener">
-              <i data-lucide="github"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-              <i data-lucide="linkedin"></i>
-            </a>
-            <a href="mailto:mariajose-serrano@hotmail.com">
-              <i data-lucide="mail"></i>
-            </a>
+            <a href="https://github.com/mariajose-serrano" target="_blank" rel="noopener"><i
+                data-lucide="github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+            <a href="mailto:mariajose-serrano@hotmail.com"><i data-lucide="mail"></i></a>
           </div>
-
           <div class="connect-actions">
-            <a href="mailto:mariajose-serrano@hotmail.com" class="btn primary">
-              Contact me!
-            </a>
-            <a href="./cv/cv-mj-ingles.pdf" download class="btn">
-              Download CV
-            </a>
-
+            <a href="mailto:mariajose-serrano@hotmail.com" class="btn primary" data-en="Contact me!"
+              data-es="¡Contáctame!">Contact me!</a>
+            <a href="./cv/cv-mj-ingles.pdf" download class="btn" data-en="Download CV" data-es="Descargar CV">Download
+              CV</a>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -356,47 +325,16 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-
       <p>🧡 by Maria José Serrano</p>
-
-      <a href="#home" class="footer-top">
-        ↑ Back to top
-      </a>
-
+      <a href="#home" class="footer-top" data-en="↑ Back to top" data-es="↑ Volver arriba">↑ Back to top</a>
     </div>
   </footer>
-
-  </div>
 
   <button class="hamburger" aria-label="Toggle menu">
     <i data-lucide="menu"></i>
   </button>
-  </div>
 
-  <script>
-    lucide.createIcons();
-
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nav-mobile');
-
-    function toggleMenu() {
-      const isOpen = nav.classList.toggle('nav-open');
-      hamburger.innerHTML = isOpen
-        ? '<i data-lucide="x"></i>'
-        : '<i data-lucide="menu"></i>';
-      lucide.createIcons();
-    }
-
-    hamburger.addEventListener('click', toggleMenu);
-
-    nav.addEventListener('click', (e) => {
-      if (e.target.closest('a')) {
-        nav.classList.remove('nav-open');
-        hamburger.innerHTML = '<i data-lucide="menu"></i>';
-        lucide.createIcons();
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
